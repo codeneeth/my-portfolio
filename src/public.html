@@ -13,58 +13,108 @@
 
 </head>
 
-<body class="bg-black relative">
+<body class="bg-black relative overflow-x-hidden">
 
     <header
-        class="fixed w-full top-0 z-50 bg-black backdrop-blur-sm  transition-all duration-300 shadow-sm shadow-white">
+    class="fixed w-full top-0 z-50 bg-black backdrop-blur-sm transition-all duration-300 shadow-sm shadow-white">
+    <div class="container mx-auto px-4">
+        <nav class="flex justify-between items-center p-4">
+            <!-- Logo -->
+            <div class="flex text-center">
+                <span class="font-extrabold text-gray-300 text-2xl">
+                    <span>Praneeth</span>
+                    <span class="text-yellow-500"> 😎</span>
+                </span>
+            </div>
 
-        <div class="container mx-auto px-4  ">
-            <nav class="flex justify-between items-center p-4">
-                <div class="flex text-center">
-                    <span class="text-xl font-extrabold"> <span
-                            class="bg-gradient-to-r from-violet-800 via-blue-900 to-red-600 bg-clip-text text-transparent text-2xl"><span>Praneeth</span>
+            <!-- Navigation Links -->
+            <ul
+                id="nav-links"
+                class="hidden md:flex space-x-12 text-lg font-mono transition">
+                <li><a href="#" class="text-gray-300 hover:text-blue-500">Home</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-blue-500">About</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-blue-500">Projects</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-blue-500">Skills</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-blue-500">Contact</a></li>
+            </ul>
 
-                </div>
-                <ul class="flex space-x-8 transition">
-                    <li><a href="#" class="text-white hover:text-blue-600 hover:animate-pulse ">Home</a></li>
-                    <li><a href="#" class="text-white hover:text-black/95 hover:animate-pulse ">About</a></li>
-                    <li><a href="#" class="text-white hover:text-black/95 hover:animate-pulse">Projects</a></li>
-                    <li><a href="#" class="text-white hover:text-black/95 hover:animate-pulse">Skills</a></li>
-                    <li><a href="#" class="text-white hover:text-black/95 hover:animate-pulse">Contact</a></li>
-                </ul>
+            <!-- Menu Button -->
+            <div class="flex items-center space-x-4">
+                <button id="menu-toggle" class="md:hidden">
+                    <i class="fa-solid fa-bars text-gray-300 hover:text-blue-500 transition-all"></i>
+                </button>
+                <button>
+                    <a href="https://github.com/codeneeth" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github text-gray-300 hover:text-blue-500 hover:animate-bounce transition-all"></i>
+                    </a>
+                </button>
+                <button>
+                    <a href="https://in.linkedin.com/in/praneeth-sai-kancheti-1584b3361" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin text-gray-300 hover:text-blue-500 hover:animate-bounce transition-all"></i>
+                    </a>
+                </button>
+                <button>
+                    <a href="https://twitter.com/kpraneeth26" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-twitter text-gray-300 hover:text-blue-500 hover:animate-bounce transition-all"></i>
+                    </a>
+                </button>
+                <button>
+                    <a href="https://instagram.com/codeneeth" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram text-gray-300 hover:text-blue-500 hover:animate-bounce transition-all"></i>
+                    </a>
+                </button>
+            </div>
+        </nav>
 
-                <div class="flex items-center space-x-4">
-                    <button> <i class="fa-solid fa-moon text-gray-600 hover:text-black/95 transition-all"></i>
-                    </button>
-                    <div class="md:hidden flex items-center ">
-                        <button>
-                            <i class="fa-solid fa-bars text-gray-600 hover:text-black/95 transition-all"></i>
-                        </button>
-                    </div>
-                </div>
-            </nav>
+        <!-- Mobile Menu -->
+        <div
+            id="mobile-menu"
+            class="hidden flex flex-col space-y-4 bg-black text-gray-300 p-4 md:hidden">
+            <a href="#" class="hover:text-blue-500">Home</a>
+            <a href="#" class="hover:text-blue-500">About</a>
+            <a href="#" class="hover:text-blue-500">Projects</a>
+            <a href="#" class="hover:text-blue-500">Skills</a>
+            <a href="#" class="hover:text-blue-500">Contact</a>
+        </div>
+    </div>
+</header>
+    <div id="particles-js" class=" absolute top-0 left-0 w-full h-full "> </div>
 
+
+    <section id="hero" class="min-h-screen flex items-center bg-transparent z-10 pt-16 pb-20 relative overflow-hidden">
+
+        <div class="mx-auto px-4">
+ <div class="h-72 w-72 mx-auto bg-gradient-to-t from-blue-200 to-blue-500/35 relative  rounded-full overflow-hidden">
+    <div>
+        <img src="dp.svg" alt="profile">
+    </div>
+ </div>
+
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4">Hello, I'm Praneeth</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8">I'm a passionate web developer with a knack for
+                    creating stunning and functional websites.</p>
+
+            </div>
+            <div class="text-center space-x-2">
+
+                <a href="#projects"
+                    class="bg-blue-500 text-white py-3 px-6 rounded-full hover:bg-blue-600  transition duration-300">View
+                    My Work</a>
+                <a href="#contact"
+                    class="bg-blue-500 text-white py-3 px-6 rounded-full hover:bg-blue-600  transition duration-300">Get
+                    in Touch</a>
+
+            </div>
 
         </div>
-    </header>
-
-    <div id="particles-js" class="max-w-screen max-h-screen absolute top-0 left-0 w-full h-full">
-
-       <section id="hero" class="min-h-screen flex items-center bg-transparent  pt-16 pb-20 relative overflow-hidden">
-
-<div class="mx-auto px-4">
-
-
-
-</div>
 
 
 
 
-       </section>
+    </section>
 
 
-    </div>
 
 
 

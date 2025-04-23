@@ -64,7 +64,8 @@ particlesJS("particles-js", {
           "mode": "grab"
         },
         "onclick": {
-          "enable": false
+          "enable": true,
+          "mode": "push"
         },
         "resize": true
       },
@@ -130,4 +131,12 @@ particlesJS("particles-js", {
         sparkle.remove();
       }, 1000);
     }
+  });
+
+  
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
   });

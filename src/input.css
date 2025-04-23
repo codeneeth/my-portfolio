@@ -71,4 +71,6 @@
   
 
   
- 
+  #particles-js {
+    pointer-events: auto;
+  }
