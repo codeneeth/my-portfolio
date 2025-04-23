@@ -74,3 +74,52 @@
   #particles-js {
     pointer-events: auto;
   }
+
+  body.light {
+    background-color: white;
+    color: black;/* Ensure text is black in light mode */
+}
+
+body.light header {
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.light a {
+    color: black; 
+}
+
+body.light a:hover {
+    color: blue;
+}
+
+body.light #mobile-menu {
+    background-color: white;
+    color: black;
+}
+
+body.light .text-gray-300 {
+    color: black !important; 
+}
+
+body.light .text-yellow-500 {
+    color: #f59e0b; 
+}
+
+body.light a.bg-blue-500 {
+  background-color: #2563eb; /* Blue background for light mode */
+  color: white; /* White text */
+}
+
+body.light a.bg-blue-500:hover {
+  background-color: #1d4ed8; /* Darker blue on hover */
+}
+
+body.light #animated-text {
+  color: black !important; /* Ensure animated text is black in light mode */
+}
+
+body.light h1 {
+  color: black; /* Ensure the main heading is black in light mode */
+}
